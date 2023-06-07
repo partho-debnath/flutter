@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/container_widget.dart';
+import '../widgets/icon_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Widgets'),
       ),
-      body: const MyContainer(),
+      body: const MyIcon(),
     );
   }
 }
