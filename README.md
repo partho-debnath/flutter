@@ -7,3 +7,35 @@
 -   DevTools version 2.23.1
 
 
+
+# Widgets
+
+-   Scaffold()
+-   AppBar()
+-   Text()
+-   Center()
+-   Column()
+-   Row()
+-   Padding()
+-   Icon()
+-   Card()
+-   ListTile()
+-   InkWell()
+-   GestureDetector()
+-   Container()
+
+### Buttons
+
+-   ElevatedButton()
+-   ElevatedButton.icon()
+-   TextButton()
+-   ElevatedButton.icon()
+-   OutlinedButton()
+-   OutlinedButton.icon()
+-   IconButton()
+
+
+### Image
+
+-   Image.asset()
+-   Image.network()
