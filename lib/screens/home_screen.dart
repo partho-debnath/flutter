@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/textfield_widget.dart';
+import '../widgets/circle_avatar_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Widgets'),
       ),
-      body: const MytextField(),
+      body: const MyCircleAvatar(),
     );
   }
 }
