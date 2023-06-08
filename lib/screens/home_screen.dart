@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/gesture_detector_widget.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -9,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Widgets'),
       ),
-      body: null,
+      body: const MyGestureDetector(),
     );
   }
 }
