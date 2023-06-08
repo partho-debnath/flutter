@@ -8,7 +8,7 @@ class MyGestureDetector extends StatelessWidget {
     return Center(
       child: Column(
         children: <Widget>[
-          Text('GestureDetector'),
+          const Text('GestureDetector'),
           GestureDetector(
             onDoubleTap: () {
               print('on Double Tap');
