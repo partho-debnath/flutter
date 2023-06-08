@@ -26,8 +26,11 @@
 -   CircleAvatar()
 -   Card()
 -   ListTile()
+-   Wrap()
+-   SingleChildScrollView()
+-   SizedBox()
 -   
-  
+
 
 ### Shape
 

@@ -8,13 +8,35 @@ class MytextField extends StatefulWidget {
 }
 
 class _MytextFieldState extends State<MytextField> {
+  TextEditingController? _emailController;
+  TextEditingController? _passwordController;
+  bool _passwordIsVisible = true;
+  String? _emailErrorMessage;
+  String? _passwordErrorMessage;
+
+  @override
+  void initState() {
+    _emailController = TextEditingController();
+    _passwordController = TextEditingController();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _emailController!.dispose();
+    _passwordController!.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           TextField(
+            controller: _emailController,
             decoration: InputDecoration(
               label: const Text('E-mail'),
               hintText: 'user@gmail.com',
@@ -47,7 +69,7 @@ class _MytextFieldState extends State<MytextField> {
                   width: 1,
                 ),
               ),
-              errorText: null == null ? null : 'Enter a valid E-mail.',
+              errorText: _emailErrorMessage,
               focusedErrorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(
@@ -59,16 +81,24 @@ class _MytextFieldState extends State<MytextField> {
             keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             onChanged: (value) {
-              print(value);
+              print('on Changed email');
             },
           ),
           const SizedBox(height: 20),
           TextField(
+            controller: _passwordController,
             decoration: InputDecoration(
               label: const Text('Password'),
               hintText: 'Enter your password',
               prefixIcon: const Icon(Icons.password),
-              suffixIcon: const Icon(Icons.visibility),
+              suffixIcon: IconButton(
+                onPressed: () {
+                  _passwordVisibleVisibleoff();
+                },
+                icon: Icon(_passwordIsVisible == true
+                    ? Icons.visibility
+                    : Icons.visibility_off),
+              ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(
@@ -97,7 +127,7 @@ class _MytextFieldState extends State<MytextField> {
                   width: 1,
                 ),
               ),
-              errorText: null == null ? null : 'Enter a valid E-mail.',
+              errorText: _passwordErrorMessage,
               focusedErrorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
                 borderSide: const BorderSide(
@@ -109,17 +139,69 @@ class _MytextFieldState extends State<MytextField> {
             keyboardType: TextInputType.text,
             textInputAction: TextInputAction.done,
             obscureText:
-                true, // when true password is invisible, other wise visible
+                _passwordIsVisible, // when true password is invisible, other wise visible
             onChanged: (value) {
-              print(value);
+              print('on Changed password');
             },
             onSubmitted: (value) {
-              print('onSubmitted');
-              print(value);
+              print('on Submitted');
+              // print(value);
             },
+          ),
+          ElevatedButton(
+            onPressed: () {
+              if (_validate() == true) {
+                print('Valide Data');
+                print('Email: ${_emailController!.text}');
+                print('Password: ${_passwordController!.text}');
+                _emailController!.clear();
+                _passwordController!.clear();
+              }
+            },
+            child: const Text('Submit'),
           ),
         ],
       ),
     );
+  }
+
+  void _passwordVisibleVisibleoff() {
+    setState(() {
+      _passwordIsVisible = !_passwordIsVisible;
+    });
+  }
+
+  bool _validate() {
+    if (_emailController!.text.isEmpty == true) {
+      setState(() {
+        _emailErrorMessage = 'Enter your email address.';
+      });
+      return false;
+    }
+    if (_emailController!.text.endsWith('.com') == false) {
+      setState(() {
+        _emailErrorMessage = 'Enter valid email address.';
+      });
+      return false;
+    }
+    if (_passwordController!.text.isEmpty == true) {
+      setState(() {
+        _emailErrorMessage = null;
+        _passwordErrorMessage = 'Enter your password.';
+      });
+      return false;
+    }
+    if (_passwordController!.text.trim().length < 8) {
+      setState(() {
+        _emailErrorMessage = null;
+        _passwordErrorMessage =
+            'Password needs to be at least 8 characters long.';
+      });
+      return false;
+    }
+    setState(() {
+      _passwordErrorMessage = null;
+    });
+    return true;
   }
 }
