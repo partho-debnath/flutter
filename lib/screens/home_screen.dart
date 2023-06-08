@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/image_widget.dart';
+import '../widgets/floating_action_button_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,7 +11,9 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter Widgets'),
       ),
-      body: const MyImageWidgets(),
+      body: null,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: const MyFloatingActionButton(),
     );
   }
 }

@@ -19,11 +19,12 @@
 -   Padding()
 -   Icon()
 -   Container()
+-   FloatingActionButton()
+-   GestureDetector()
+-   InkWell()
 -   CircleAvatar()
 -   Card()
 -   ListTile()
--   GestureDetector()
--   InkWell()
 -   
   
 
