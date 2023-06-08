@@ -26,9 +26,9 @@
 -   CircleAvatar()
 -   Card()
 -   ListTile()
+-   SizedBox()
 -   Wrap()
 -   SingleChildScrollView()
--   SizedBox()
 -   
 
 
