@@ -19,17 +19,19 @@
 -   Padding()
 -   Icon()
 -   Container()
+-   CircleAvatar()
 -   Card()
 -   ListTile()
 -   GestureDetector()
 -   InkWell()
 -   
-
+  
 
 ### Shape
 
 -   RoundedRectangleBorder()
 -   CircleBorder()
+-   
 
 ### Buttons
 
@@ -46,3 +48,4 @@
 
 -   Image.asset()
 -   Image.network()
+-   NetworkImage()
