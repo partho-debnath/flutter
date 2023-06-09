@@ -16,7 +16,7 @@ class _MytextFieldState extends State<MytextField> {
 
   @override
   void initState() {
-    _emailController = TextEditingController();
+    _emailController = TextEditingController(text: 'default@gmail.com');
     _passwordController = TextEditingController();
     super.initState();
   }
