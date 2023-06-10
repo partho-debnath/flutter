@@ -35,6 +35,10 @@ class _MyBottomNavigationBarScreenState
         child: _widgets[_selectedIndex]['screen'] as Widget,
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 8,
+        iconSize: 25,
+        // selectedFontSize: 21,
+
         currentIndex: _selectedIndex,
         onTap: _chengeScreen,
         showSelectedLabels: true,
