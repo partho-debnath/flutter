@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/bottomnavigationbars/defaulttabcontroler_bottomnavigationbar_screen.dart';
+import 'screens/bottomnavigationbars/bottomappbar_bottomnavigationbar_screen.dart';
 
 void main() {
   runApp(const MyApp());

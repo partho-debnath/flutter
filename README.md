@@ -58,5 +58,5 @@
 
 ### Navigations
 
--   BottomNavigationBar() [2 ways]
+-   BottomNavigationBar() [3 ways. [BottomNavigationBar()]. [TabBar, TabBarView, DefaultTabController()]. [BottomAppBar()] ]
 -   
