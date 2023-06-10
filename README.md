@@ -31,7 +31,7 @@
 -   SingleChildScrollView()
 -   
 
-
+ 
 ### Shape
 
 -   RoundedRectangleBorder()
@@ -54,4 +54,9 @@
 -   Image.asset()
 -   Image.network()
 -   NetworkImage()
+-   
+
+### Navigations
+
+-   BottomNavigationBar()
 -   
