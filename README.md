@@ -58,5 +58,5 @@
 
 ### Navigations
 
--   BottomNavigationBar()
+-   BottomNavigationBar() [2 ways]
 -   

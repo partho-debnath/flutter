@@ -27,12 +27,27 @@ class _MyBottomNavigationBarScreenState
         appBar: AppBar(
           title: Text(_widgets[_currentIndex]['title'] as String),
         ),
-        body: const TabBarView(
+        body: TabBarView(
           children: <Widget>[
-            Center(child: Text('Home')),
-            Center(child: Text('Favourite')),
-            Center(child: Text('Search')),
-            Center(child: Text('Setting')),
+            const Center(child: Text('Home')),
+            const Center(child: Text('Favourite')),
+            Center(
+              child: Column(
+                children: <Widget>[
+                  const Text('Search'),
+                  MyButton(
+                    index: 0,
+                    text: 'Go to Home',
+                    onPress: () {
+                      setState(() {
+                        _currentIndex = 0;
+                      });
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const Center(child: Text('Setting')),
           ],
         ),
         bottomNavigationBar: TabBar(
@@ -88,6 +103,29 @@ class _MyBottomNavigationBarScreenState
           ],
         ),
       ),
+    );
+  }
+}
+
+class MyButton extends StatelessWidget {
+  final String text;
+  final VoidCallback onPress;
+  final int index;
+  const MyButton({
+    super.key,
+    required this.index,
+    required this.onPress,
+    required this.text,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+        onPress();
+        DefaultTabController.of(context).animateTo(index);
+      },
+      child: Text(text),
     );
   }
 }
