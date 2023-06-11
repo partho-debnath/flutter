@@ -21,7 +21,7 @@ class MyListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _verticalListViewSepareted();
+    return _horizontalListViewSepareted();
   }
 
   Widget _verticalListViewSepareted() {
@@ -48,6 +48,26 @@ class MyListView extends StatelessWidget {
           indent: 30,
           endIndent: 3,
         );
+      },
+    );
+  }
+
+  Widget _horizontalListViewSepareted() {
+    return ListView.separated(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.all(10.0),
+      itemCount: _cities.length,
+      itemBuilder: (cntxt, index) {
+        return Text(
+          'City Name: ${_cities[index]}',
+          style: const TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+          ),
+        );
+      },
+      separatorBuilder: (cntxt, index) {
+        return const SizedBox(width: 20);
       },
     );
   }
