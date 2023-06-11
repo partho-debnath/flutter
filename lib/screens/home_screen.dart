@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('ListView()'),
       ),
-      body: const MyListView(),
+      body: MyListView(),
     );
   }
 }
