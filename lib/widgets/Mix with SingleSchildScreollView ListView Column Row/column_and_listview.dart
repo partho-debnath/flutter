@@ -63,6 +63,7 @@ class ColumnListView extends StatelessWidget {
                 ),
               ),
               SizedBox(width: 10),
+              SizedBox(width: 10),
               Text('Hello World 82'),
               SizedBox(width: 10),
               Text('Hello World 83'),
