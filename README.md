@@ -32,12 +32,13 @@
 -   ListView()
 -   ListView.builder()
 -   ListView.separeted()
+-   Divider()
 -   Stack()
 -   Align()
 -   Positioned()
--   Divider()
 -   Scrollbar()
- 
+-   
+
 
 ### Shape
 

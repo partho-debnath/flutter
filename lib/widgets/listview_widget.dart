@@ -17,11 +17,16 @@ class MyListView extends StatelessWidget {
     'Mirpur-10',
     'Mirpur-11',
     'Mirpur-12',
+    'Mirpur-13',
+    'Mirpur-14',
+    'Mirpur-15',
+    'Mirpur-16',
+    'Mirpur-17',
   ];
 
   @override
   Widget build(BuildContext context) {
-    return _horizontalListViewSepareted();
+    return _verticalListViewSepareted();
   }
 
   Widget _verticalListViewSepareted() {
@@ -43,10 +48,11 @@ class MyListView extends StatelessWidget {
       },
       separatorBuilder: (cntxt, index) {
         return const Divider(
+          height: 20, // default is 16.0
           thickness: 1,
           color: Colors.grey,
           indent: 30,
-          endIndent: 3,
+          endIndent: 10,
         );
       },
     );
@@ -67,7 +73,11 @@ class MyListView extends StatelessWidget {
         );
       },
       separatorBuilder: (cntxt, index) {
-        return const SizedBox(width: 20);
+        return Container(
+          width: 30,
+          height: 30,
+          color: Colors.amber,
+        );
       },
     );
   }
@@ -76,9 +86,9 @@ class MyListView extends StatelessWidget {
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       // reverse: true,
-      shrinkWrap: true,
+      // shrinkWrap: false,
+      // primary: true,
       scrollDirection: Axis.horizontal,
-
       itemCount: _cities.length,
       itemBuilder: (cntxt, index) {
         return Padding(
@@ -98,6 +108,8 @@ class MyListView extends StatelessWidget {
   Widget _verticalListViewBuilder() {
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      shrinkWrap: false,
+      primary: true,
       reverse: true,
       itemCount: _cities.length,
       itemBuilder: (cntxt, index) {
