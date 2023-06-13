@@ -69,3 +69,8 @@
 
 -   BottomNavigationBar() [3 ways. [BottomNavigationBar()]. [TabBar, TabBarView, DefaultTabController()]. [BottomAppBar()] ]
 -   Drawer()
+
+
+### ShowDialog
+
+- showDialog() [AlertDialog(), ]

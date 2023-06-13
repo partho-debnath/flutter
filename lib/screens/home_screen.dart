@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/drawer_widget.dart';
+import '../widgets/alertdialog_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,8 +11,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Drawer()'),
       ),
-      body: null,
-      drawer: const MyDrawer(),
+      body: const MyAlertDialog(),
     );
   }
 }
