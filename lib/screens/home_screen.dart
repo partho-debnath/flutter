@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/stack_positioned_align_widget.dart';
+import '../widgets/drawer_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Column() & ListView()'),
+        title: const Text('Drawer()'),
       ),
-      body: const StackWidget(),
+      body: null,
+      drawer: const MyDrawer(),
     );
   }
 }
