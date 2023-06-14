@@ -75,6 +75,13 @@
     -   Without passed any value.
     -   With passed value.
 
+-   Navigations using NamedRoute (NamedRoute Branch)
+    -   Without passed any value.
+    -   With passed value (StatelessWidget).
+    -   With passed value (StatefulWidget).
+
+
+
 ### ShowDialog
 
 - showDialog() [AlertDialog(), ]
