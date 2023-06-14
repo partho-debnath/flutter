@@ -1,20 +1,32 @@
 import 'package:flutter/material.dart';
 
-import 'screens/navigations/using_push_with_value_passes/home_screen.dart';
+import './screens/navigations/using_namedroute_without_value_passes/home_screen.dart';
+import './screens/navigations//using_namedroute_without_value_passes/screen_two.dart';
+import './screens/navigations/using_namedroute_without_value_passes/screen_one.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
+/* 
+  this is only for 
+  1. "screens/navigations/using_namedroute_without_value_passes"
+*/
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Widgets',
-      home: HomeScreen(),
+      initialRoute: HomeScreen.routeName,
+      routes: {
+        HomeScreen.routeName: (cntxt) => const HomeScreen(),
+        ScreenOne.routeName: (cntxt) => const ScreenOne(),
+        ScreenTwo.routeName: (context) => const ScreenTwo(),
+      },
     );
   }
 }

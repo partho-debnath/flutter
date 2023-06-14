@@ -75,6 +75,10 @@
     -   Without passed any value.
     -   With passed value.
 
+-   Navigations using NamedRoute
+    -   Without passed any value.
+
+
 ### ShowDialog
 
 - showDialog() [AlertDialog(), ]
