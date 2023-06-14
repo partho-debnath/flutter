@@ -78,6 +78,7 @@
 -   Navigations using NamedRoute
     -   Without passed any value.
     -   With passed value (StatelessWidget).
+    -   With passed value (StatefulWidget).
 
 
 ### ShowDialog
