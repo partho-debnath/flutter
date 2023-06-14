@@ -72,7 +72,8 @@
 -   TabBar() or Bottom AppBar
 
 -   Navigations using push()
-    -   Without pass any value
+    -   Without passed any value.
+    -   With passed value.
 
 ### ShowDialog
 
