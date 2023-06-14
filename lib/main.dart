@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/navigations/using_push_with_value_passes/home_screen.dart';
+import './screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
