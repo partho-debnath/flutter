@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/circular_and_linear_progree_indicator_widget.dart';
+import '../widgets/gridview_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('CircularAndLinearProgressIndicator()'),
+        title: const Text('GridView()'),
       ),
-      body: const MyCircularAndLinearProgressIndicator(),
+      body: const MyGridView(),
     );
   }
 }

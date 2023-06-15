@@ -38,6 +38,8 @@
 -   Positioned.fill()
 -   Align()
 -   Scrollbar()
+-   CircularProgressIndicator()
+-   LinearProgressIndicator()
 -   
 
 
