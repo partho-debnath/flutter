@@ -44,7 +44,9 @@
 -   GridView.builder()
 -   AspectRatio()
 -   LayoutBuilder()
--   
+-   Expanded()
+-   Flexible()
+-   MediaQuery()
 -   
 -   
 -   
