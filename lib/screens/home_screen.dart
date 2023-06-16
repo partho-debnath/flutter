@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/flexible_widget.dart';
+import '../widgets/mediaquery.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flexible()'),
+        title: const Text('MediaQuery()'),
       ),
-      body: const MyFlexible(),
+      body: const MyMediaQuery(),
     );
   }
 }
