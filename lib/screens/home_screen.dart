@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/expanded_widget.dart';
+import '../widgets/flexible_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Expanded()'),
+        title: const Text('Flexible()'),
       ),
-      body: const MyExpanded(),
+      body: const MyFlexible(),
     );
   }
 }
