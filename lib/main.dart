@@ -28,7 +28,15 @@ NamedRoute with value passes for StatefulWidget.
 pass back data, current screen to previous screen without NamedRoute.
 */
 
-import './screens/navigations/pass_back_data_current_screen_to_previous/without_named_route/home_screen.dart';
+// import './screens/navigations/pass_back_data_current_screen_to_previous/without_named_route/home_screen.dart';
+
+/*
+pass back data, current screen to previous screen with NamedRoute.
+*/
+
+import './screens/navigations/pass_back_data_current_screen_to_previous/with_named_route/home_screen.dart';
+import './screens/navigations/pass_back_data_current_screen_to_previous/with_named_route/screen_one.dart';
+import './screens/navigations/pass_back_data_current_screen_to_previous/with_named_route/screen_two.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,16 +47,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Widgets',
-      home: HomeScreen(),
-      // initialRoute: HomeScreen.routeName,
-      // routes: {
-      //   HomeScreen.routeName: (cntxt) => const HomeScreen(),
-      //   ScreenOne.routeName: (cntxt) => const ScreenOne(),
-      //   ScreenTwo.routeName: (context) => const ScreenTwo(),
-      // },
+      // home: HomeScreen(),
+      initialRoute: HomeScreen.routeName,
+      routes: {
+        HomeScreen.routeName: (cntxt) => const HomeScreen(),
+        ScreenOne.routeName: (cntxt) => const ScreenOne(),
+        ScreenTwo.routeName: (context) => const ScreenTwo(),
+      },
     );
   }
 }
