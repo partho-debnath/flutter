@@ -5,14 +5,14 @@ class MyAlertDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _defaultAlertDialog(context);
+    return _buttonWithCustomizeAlertDialog(context);
   }
 
-  Center _defaultAlertDialog(BuildContext context) {
+  Center _buttonWithDefaultAlertDialog(BuildContext context) {
     return Center(
       child: ElevatedButton(
         onPressed: () async {
-          bool? yesOrNo = await _myAlertDialog(context);
+          bool? yesOrNo = await _defaultAlertDialog(context);
 
           if (yesOrNo == true) {
             print('Logout');
@@ -25,7 +25,7 @@ class MyAlertDialog extends StatelessWidget {
     );
   }
 
-  Future<bool?> _myAlertDialog(BuildContext context) {
+  Future<bool?> _defaultAlertDialog(BuildContext context) {
     return showDialog<bool?>(
       context: context,
       builder: (cntxt) {
@@ -53,11 +53,45 @@ class MyAlertDialog extends StatelessWidget {
     );
   }
 
+  Center _buttonWithCustomizeAlertDialog(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        onPressed: () async {
+          bool? yesOrNo = await _myCustomizeAlertDialog(context);
+
+          if (yesOrNo == true) {
+            print('Logout');
+          } else if (yesOrNo == false) {
+            print('Not Logout.');
+          }
+        },
+        child: const Text('Click Me'),
+      ),
+    );
+  }
+
   Future<bool?> _myCustomizeAlertDialog(BuildContext context) {
     return showDialog<bool?>(
+      /// barrierDismissible: false. means, when a user
+      /// tap outside the "AlertDialog" that "AlertDialog" is not closed.
+      barrierDismissible: false,
+
+      /// barrierColor: Colors.amber. means outside the "AlertDialog" color
+      barrierColor: Colors.amberAccent,
+      // useSafeArea: false,
+
       context: context,
       builder: (cntxt) {
         return AlertDialog(
+          /// set position of the AlertDialog
+          alignment: Alignment.topCenter,
+          elevation: 10,
+          contentPadding: const EdgeInsets.all(10),
+          backgroundColor: Colors.deepPurple,
+          shadowColor: Colors.purple,
+          shape: BeveledRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
           icon: const Icon(Icons.logout),
           iconColor: Colors.red,
           title: const Text('Are you sure?'),
