@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/alertdialog_widget.dart';
+import '../widgets/show_modal_bottom_sheet.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Drawer()'),
+        title: const Text('showModalBottomSheet()'),
       ),
-      body: const MyAlertDialog(),
+      body: const MyShowModalBottomSheet(),
     );
   }
 }
