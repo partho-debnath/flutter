@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/show_modal_bottom_sheet.dart';
+import '../widgets/chip_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('showModalBottomSheet()'),
+        title: const Text('Chip()'),
       ),
-      body: const MyShowModalBottomSheet(),
+      body: const MyChip(),
     );
   }
 }

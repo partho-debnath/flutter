@@ -50,7 +50,7 @@
 -   showModalBottomSheet()
 -   PopupMenuButton()
 -   Flex()
--   
+-   Chip()
 -   
 
 
