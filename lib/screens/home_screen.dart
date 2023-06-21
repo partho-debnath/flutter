@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/chip_widget.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -11,7 +9,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Chip()'),
       ),
-      body: const MyChip(),
+      body: null,
     );
   }
 }

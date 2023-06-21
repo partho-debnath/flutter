@@ -11,7 +11,7 @@ class CenterAndText extends StatelessWidget {
         // softWrap: false,
         // textAlign: TextAlign.center,
         textDirection: TextDirection.rtl,
-
+        textScaleFactor: 1.2,
         style: TextStyle(
           color: Colors.white,
           fontSize: 30,

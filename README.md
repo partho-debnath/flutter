@@ -48,6 +48,7 @@
 -   Flexible()
 -   MediaQuery()
 -   showModalBottomSheet()
+-   showBottomSheet()
 -   PopupMenuButton()
 -   Flex()
 -   Chip()
@@ -57,6 +58,7 @@
 ### Shape
 
 -   RoundedRectangleBorder()
+-   BeveledRectangleBorder()
 -   CircleBorder()
 -   
 
