@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/visibility_widget.dart';
+import '../widgets/switch_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Visibility()'),
+        title: const Text('Switch() Widget'),
       ),
-      body: const MyVisibility(),
+      body: const MySwitch(),
     );
   }
 }

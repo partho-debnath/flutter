@@ -53,7 +53,7 @@
 -   Flex()
 -   Chip()
 -   Visibility()
--   
+-   Switch()
 -   
 -   
 -   
