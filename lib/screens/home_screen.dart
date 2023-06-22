@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/flex_widget.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -7,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chip()'),
+        title: const Text('Flex()'),
       ),
-      body: null,
+      body: const MyFlex(),
     );
   }
 }
