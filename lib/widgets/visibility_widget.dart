@@ -36,7 +36,9 @@ class _MyVisibilityState extends State<MyVisibility> {
   }
 
   Text _usingTernaryOperator() {
-    return isVisible == true ? const Text('True') : const Text('False');
+    return isVisible == true
+        ? const Text('True. This Line Using Ternary Operator')
+        : const Text('False. This Line Using Ternary Operator');
   }
 
   Visibility _visibilityWithOutReplacement() {
