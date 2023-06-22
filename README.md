@@ -54,7 +54,7 @@
 -   Chip()
 -   Visibility()
 -   Switch()
--   
+-   Checkbox()
 -   
 -   
 -   
