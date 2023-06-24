@@ -105,6 +105,7 @@ class _MyFormState extends State<MyForm> {
                 if (form.currentState!.validate() == true) {
                   print('Valid');
                   form.currentState!.save();
+                  form.currentState!.reset();
                 } else
                   print('inValid');
               },
