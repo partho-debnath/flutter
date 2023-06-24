@@ -56,6 +56,8 @@
 -   Switch()
 -   Checkbox()
 -   Form()
+-   RichText()
+-   
 -   
 -   
 
