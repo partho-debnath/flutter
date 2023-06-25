@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/richtext_widget.dart';
+import '../widgets/gridtile_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('RichText() Widget'),
+        title: const Text('GridTile() Widget'),
       ),
-      body: const MyRichText(),
+      body: const MyGridTile(),
     );
   }
 }
