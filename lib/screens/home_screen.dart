@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/gridtile_widget.dart';
+import '../widgets/dismissable_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GridTile() Widget'),
+        title: const Text('Dismissible() Widget'),
       ),
-      body: const MyGridTile(),
+      body: const MyDismissable(),
     );
   }
 }

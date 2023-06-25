@@ -58,7 +58,7 @@
 -   Form()
 -   RichText()
 -   GridTile(), GridTileBar()
--   
+-   Dismissible()
 -   
 -   
 -   
