@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/snackbar_widget.dart';
+import '../widgets/materialbanner_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('showSnackBar() Widget'),
+        title: const Text('showMaterialBanner() Widget'),
       ),
-      body: const MySnackBar(),
+      body: const MyMaterialBanner(),
     );
   }
 }
