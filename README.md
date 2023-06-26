@@ -113,7 +113,7 @@
 - showDialog() [AlertDialog(), ]
 
 
-### SnackBar
+### ScaffoldMessenger -> SnackBar
 
 -   showSnackBar() [SnackBar()]
 -   showMaterialBanner() [MaterialBanner()]
