@@ -116,4 +116,4 @@
 ### SnackBar
 
 -   showSnackBar() [SnackBar()]
--   
+-   showMaterialBanner() [MaterialBanner()]
