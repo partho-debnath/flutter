@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/dismissable_widget.dart';
+import '../widgets/snackbar_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dismissible() Widget'),
+        title: const Text('showSnackBar() Widget'),
       ),
-      body: const MyDismissable(),
+      body: const MySnackBar(),
     );
   }
 }

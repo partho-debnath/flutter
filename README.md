@@ -112,3 +112,8 @@
 
 - showDialog() [AlertDialog(), ]
 
+
+### SnackBar
+
+-   showSnackBar() [SnackBar()]
+-   
