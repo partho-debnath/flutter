@@ -60,7 +60,7 @@
 -   GridTile(), GridTileBar()
 -   Dismissible()
 -   Slider()
--   
+-   SwitchListTile()
 -   
 -   
 
