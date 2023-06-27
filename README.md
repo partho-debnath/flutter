@@ -59,7 +59,7 @@
 -   RichText()
 -   GridTile(), GridTileBar()
 -   Dismissible()
--   
+-   Slider()
 -   
 -   
 -   

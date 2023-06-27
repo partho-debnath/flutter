@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/chip_widget.dart';
+import '../widgets/slider_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chip() Widget'),
+        title: const Text('Slider() Widget'),
       ),
-      body: MyChip(),
+      body: const MySlider(),
     );
   }
 }
