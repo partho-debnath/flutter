@@ -8,7 +8,8 @@ class MySlider extends StatefulWidget {
 }
 
 class _MySliderState extends State<MySlider> {
-  double currentPosition = 10.0;
+  double currentPosition0 = 10.0;
+  double currentPosition1 = 10.0;
   double currentPosition2 = 0.0;
   double currentPosition3 = 30.0;
   double currentPosition4 = 0.0;
@@ -21,10 +22,24 @@ class _MySliderState extends State<MySlider> {
           min: 0,
           max: 100,
           divisions: 100,
-          label: currentPosition.toStringAsFixed(2),
-          value: currentPosition,
+          label: currentPosition0.toStringAsFixed(2),
+          value: currentPosition0,
           onChanged: (currentValue) {
-            currentPosition = currentValue;
+            currentPosition0 = currentValue;
+            if (mounted == true) {
+              setState(() {});
+            }
+          },
+        ),
+        const Divider(),
+        Slider.adaptive(
+          min: 0,
+          max: 100,
+          divisions: 100,
+          label: currentPosition1.toStringAsFixed(2),
+          value: currentPosition1,
+          onChanged: (currentValue) {
+            currentPosition1 = currentValue;
             if (mounted == true) {
               setState(() {});
             }
