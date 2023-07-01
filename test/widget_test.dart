@@ -7,8 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutterwidgets/main.dart';
+import 'package:flutterwidgets/1_task_manager/task_manager.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
