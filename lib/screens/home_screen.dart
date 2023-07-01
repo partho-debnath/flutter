@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/switchlisttile_widget.dart';
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -11,7 +9,9 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('SwitchListTile() Widget'),
       ),
-      body: const MySwitchListTile(),
+      body: const Center(
+        child: Text('For more information check all Branches.'),
+      ),
     );
   }
 }
