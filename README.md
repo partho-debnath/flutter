@@ -6,9 +6,11 @@
 -   Flutter version 3.10.3
 -   DevTools version 2.23.1
 
+<br>
 
+# Widgets  (widgets Branch)
 
-# Widgets
+## Widgets
 
 -   Scaffold()
 -   AppBar()
@@ -91,22 +93,6 @@
 -   NetworkImage()
 -   
 
-### Navigations
-
--   BottomNavigationBar() [3 ways. [BottomNavigationBar()]. [TabBar, TabBarView, DefaultTabController()]. [BottomAppBar()] ]
--   Drawer()
--   TabBar() or Bottom AppBar
-
--   Navigations using push()
-    -   Without passed any value.
-    -   With passed value.
-
--   Navigations using NamedRoute (NamedRoute Branch)
-    -   Without passed any value.
-    -   With passed value (StatelessWidget).
-    -   With passed value (StatefulWidget).
-
-
 
 ### ShowDialog
 
@@ -117,3 +103,55 @@
 
 -   showSnackBar() [SnackBar()]
 -   showMaterialBanner() [MaterialBanner()]
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+# Navigations  (NamedRoute Branch)
+
+-   BottomNavigationBar() [3 ways. [BottomNavigationBar()]. [TabBar, TabBarView, DefaultTabController()]. [BottomAppBar()] ]
+-   Drawer()
+-   TabBar() or Bottom AppBar
+
+-   Navigations using push()
+    -   Without passed any value.
+    -   With passed value.
+
+-   Navigations using NamedRoute
+    -   Without passed any value.
+    -   With passed value (StatelessWidget).
+    -   With passed value (StatefulWidget).
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+# API Call  (ApiCall Branch)
+
+## 1_task_manager
+
+    Fetch data from API, with & without FutureBuilder(). 
+    Data fetching time show a loading screen as 
+    CircularProgressIndicator(), After data fetching 
+    is done show the data.
+
+### Main Widgets
+
+-   FutureBuilder()
+-   CircularProgressIndicator()
+
