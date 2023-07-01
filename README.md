@@ -110,7 +110,7 @@
 
 ### ShowDialog
 
-- showDialog() [AlertDialog(), ]
+- showDialog() [AlertDialog(), AboutDialog(), ]
 
 
 ### ScaffoldMessenger -> SnackBar

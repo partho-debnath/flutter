@@ -9,6 +9,18 @@ class MySwitch extends StatefulWidget {
 
 class _MySwitchState extends State<MySwitch> {
   bool isTrue = false;
+
+  // ? this is work when  MaterialApp(theme: ThemeData(useMaterial3: true)),
+  final MaterialStateProperty<Icon?> thumbIcon =
+      MaterialStateProperty.resolveWith<Icon?>(
+    (Set<MaterialState> states) {
+      if (states.contains(MaterialState.selected)) {
+        return const Icon(Icons.check);
+      }
+      return const Icon(Icons.close);
+    },
+  );
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -52,6 +64,16 @@ class _MySwitchState extends State<MySwitch> {
                 }
               },
             ),
+          ),
+          Switch(
+            thumbIcon: thumbIcon,
+            value: isTrue,
+            onChanged: (bool value) {
+              isTrue = value;
+              if (mounted == true) {
+                setState(() {});
+              }
+            },
           ),
         ],
       ),
