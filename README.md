@@ -63,7 +63,8 @@
 -   Dismissible()
 -   Slider()
 -   SwitchListTile()
--   
+-   AboutListTile()
+-   Banner()
 -   
 
 
@@ -84,6 +85,7 @@
 -   OutlinedButton()
 -   OutlinedButton.icon()
 -   IconButton()
+-   CloseButton()
 
 
 ### Image
@@ -96,7 +98,7 @@
 
 ### ShowDialog
 
-- showDialog() [AlertDialog(), ]
+- showDialog() [AlertDialog(), AboutDialog(), ]
 
 
 ### ScaffoldMessenger -> SnackBar
