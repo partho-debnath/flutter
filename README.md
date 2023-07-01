@@ -86,6 +86,7 @@
 -   OutlinedButton()
 -   OutlinedButton.icon()
 -   IconButton()
+-   CloseButton()
 
 
 ### Image
