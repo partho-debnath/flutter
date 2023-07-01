@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/aboutdialog_widget.dart';
+import '../widgets/aboutlisttile_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SwitchListTile() Widget'),
+        title: const Text('AboutListTile() Widget'),
       ),
-      body: const MyAboutDialog(),
+      body: const MyAboutListTile(),
     );
   }
 }

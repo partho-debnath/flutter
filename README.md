@@ -61,7 +61,7 @@
 -   Dismissible()
 -   Slider()
 -   SwitchListTile()
--   
+-   AboutListTile()
 -   
 
 
