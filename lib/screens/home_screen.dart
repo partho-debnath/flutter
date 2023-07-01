@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/aboutlisttile_widget.dart';
+import '../widgets/banner_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AboutListTile() Widget'),
+        title: const Text('Banner() Widget'),
       ),
-      body: const MyAboutListTile(),
+      body: const MyBanner(),
     );
   }
 }

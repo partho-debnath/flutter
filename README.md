@@ -62,6 +62,10 @@
 -   Slider()
 -   SwitchListTile()
 -   AboutListTile()
+-   Banner()
+-   
+-   
+-   
 -   
 
 
