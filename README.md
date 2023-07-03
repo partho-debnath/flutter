@@ -63,7 +63,7 @@
 -   SwitchListTile()
 -   AboutListTile()
 -   Banner()
--   
+-   ChoiceChip()
 -   
 -   
 -   
