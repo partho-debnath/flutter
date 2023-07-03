@@ -65,7 +65,7 @@
 -   SwitchListTile()
 -   AboutListTile()
 -   Banner()
--   
+-   ChoiceChip()
 
 
 ### Shape
