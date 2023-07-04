@@ -66,6 +66,19 @@
 -   AboutListTile()
 -   Banner()
 -   ChoiceChip()
+-   DecoratedBox()
+-   
+-   
+-   
+-   
+-   
+-   
+-   
+-   
+-   
+-   
+
+
 
 
 ### Shape
@@ -74,6 +87,8 @@
 -   RoundedRectangleBorder()
 -   BeveledRectangleBorder()
 -   CircleBorder()
+-   
+-   
 -   
 
 ### Buttons
@@ -86,6 +101,11 @@
 -   OutlinedButton.icon()
 -   IconButton()
 -   CloseButton()
+-   DropdownButton()
+-   
+-   
+-   
+-   
 
 
 ### Image
@@ -94,11 +114,15 @@
 -   Image.network()
 -   NetworkImage()
 -   
+-   
+-   
 
 
 ### ShowDialog
 
 - showDialog() [AlertDialog(), AboutDialog(), ]
+-   
+-   
 
 
 ### ScaffoldMessenger -> SnackBar
