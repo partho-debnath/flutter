@@ -64,7 +64,7 @@
 -   AboutListTile()
 -   Banner()
 -   ChoiceChip()
--   
+-   DecoratedBox()
 -   
 -   
 
@@ -87,6 +87,7 @@
 -   OutlinedButton.icon()
 -   IconButton()
 -   CloseButton()
+-   DropdownButton()
 
 
 ### Image

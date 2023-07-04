@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/choicechip_widget.dart';
+import '../widgets/dropdownButton_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ChoiceChip() Widget'),
+        title: const Text('DropdownButton() Widget'),
       ),
-      body: const MyChoiceChip(),
+      body: const MyDropdownButton(),
     );
   }
 }
