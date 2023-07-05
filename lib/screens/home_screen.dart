@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/decoratedbox_widget.dart';
+import '../widgets/ink_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('DecoratedBox() Widget'),
+        title: const Text('Ink() Widget'),
       ),
-      body: const MyDecoratedBox(),
+      body: const MyInk(),
     );
   }
 }
