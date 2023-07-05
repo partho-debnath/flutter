@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/dropdownButton_widget.dart';
+import '../widgets/decoratedbox_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('DropdownButton() Widget'),
+        title: const Text('DecoratedBox() Widget'),
       ),
-      body: const MyDropdownButton(),
+      body: const MyDecoratedBox(),
     );
   }
 }
