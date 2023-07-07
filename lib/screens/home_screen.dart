@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/ink_widget.dart';
+import '../widgets/image_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ink() Widget'),
+        title: const Text('Image Widget'),
       ),
-      body: const MyInk(),
+      body: const MyImageWidgets(),
     );
   }
 }

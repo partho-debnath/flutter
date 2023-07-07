@@ -9,6 +9,15 @@ class MyImageWidgets extends StatelessWidget {
       children: <Widget>[
         Padding(
           padding: const EdgeInsets.all(8.0),
+          child: Image.asset(
+            'images/rain-light.jpg',
+            height: 150,
+            width: 200,
+            fit: BoxFit.cover,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: Image.network(
             'https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_1280.jpg',
             height: 150,
@@ -18,11 +27,31 @@ class MyImageWidgets extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Image.asset(
-            'images/rain-light.jpg',
+          child: Image.network(
+            'https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_1280.jpg',
             height: 150,
-            width: 200,
+            width: 150,
             fit: BoxFit.cover,
+            loadingBuilder: (context, child, loadingProgress) {
+              if (loadingProgress == null) {
+                return child;
+              } else {
+                return Center(
+                  child: CircularProgressIndicator(
+                    value: loadingProgress.expectedTotalBytes != null
+                        ? loadingProgress.cumulativeBytesLoaded /
+                            loadingProgress.expectedTotalBytes!
+                        : null,
+                  ),
+                );
+              }
+            },
+            errorBuilder: (context, error, stackTrace) {
+              return const Icon(
+                Icons.image,
+                size: 50,
+              );
+            },
           ),
         ),
         const CircleAvatar(
