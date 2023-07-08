@@ -67,6 +67,11 @@
 -   DecoratedBox()
 -   Ink()
 -   
+-   
+-   
+-   
+-   
+-   
 
 
 ### Shape
@@ -75,6 +80,8 @@
 -   RoundedRectangleBorder()
 -   BeveledRectangleBorder()
 -   CircleBorder()
+-   
+-   
 -   
 
 ### Buttons
@@ -88,6 +95,11 @@
 -   IconButton()
 -   CloseButton()
 -   DropdownButton()
+-   DropdownButtonFormField()
+-   
+-   
+-   
+-   
 
 
 ### Image
@@ -96,6 +108,9 @@
 -   Image.network()
 -   NetworkImage()
 -   
+-   
+-   
+
 
 ### Navigations
 
