@@ -8,8 +8,9 @@ class MytextField extends StatefulWidget {
 }
 
 class _MytextFieldState extends State<MytextField> {
-  TextEditingController? _emailController;
-  TextEditingController? _passwordController;
+  late TextEditingController _emailController;
+  late TextEditingController _passwordController;
+  late FocusNode _passwordFocusNode;
   bool _passwordIsVisible = true;
   String? _emailErrorMessage;
   String? _passwordErrorMessage;
@@ -18,13 +19,15 @@ class _MytextFieldState extends State<MytextField> {
   void initState() {
     _emailController = TextEditingController(text: 'default@gmail.com');
     _passwordController = TextEditingController();
+    _passwordFocusNode = FocusNode();
     super.initState();
   }
 
   @override
   void dispose() {
-    _emailController!.dispose();
-    _passwordController!.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
+    _passwordFocusNode.dispose();
     super.dispose();
   }
 
@@ -83,10 +86,17 @@ class _MytextFieldState extends State<MytextField> {
             onChanged: (value) {
               print('on Changed email');
             },
+            onSubmitted: (value) {
+              print('on Submitted --- $value');
+              // _passwordFocusNode.requestFocus();
+              /// _passwordFocusNode.requestFocus() is same as FocusScope.of(context).requestFocus(_passwordFocusNode)
+              FocusScope.of(context).requestFocus(_passwordFocusNode);
+            },
           ),
           const SizedBox(height: 20),
           TextField(
             controller: _passwordController,
+            focusNode: _passwordFocusNode,
             decoration: InputDecoration(
               label: const Text('Password'),
               hintText: 'Enter your password',
@@ -152,10 +162,10 @@ class _MytextFieldState extends State<MytextField> {
             onPressed: () {
               if (_validate() == true) {
                 print('Valide Data');
-                print('Email: ${_emailController!.text}');
-                print('Password: ${_passwordController!.text}');
-                _emailController!.clear();
-                _passwordController!.clear();
+                print('Email: ${_emailController.text}');
+                print('Password: ${_passwordController.text}');
+                _emailController.clear();
+                _passwordController.clear();
               }
             },
             child: const Text('Submit'),
@@ -172,26 +182,26 @@ class _MytextFieldState extends State<MytextField> {
   }
 
   bool _validate() {
-    if (_emailController!.text.isEmpty == true) {
+    if (_emailController.text.isEmpty == true) {
       setState(() {
         _emailErrorMessage = 'Enter your email address.';
       });
       return false;
     }
-    if (_emailController!.text.endsWith('.com') == false) {
+    if (_emailController.text.endsWith('.com') == false) {
       setState(() {
         _emailErrorMessage = 'Enter valid email address.';
       });
       return false;
     }
-    if (_passwordController!.text.isEmpty == true) {
+    if (_passwordController.text.isEmpty == true) {
       setState(() {
         _emailErrorMessage = null;
         _passwordErrorMessage = 'Enter your password.';
       });
       return false;
     }
-    if (_passwordController!.text.trim().length < 8) {
+    if (_passwordController.text.trim().length < 8) {
       setState(() {
         _emailErrorMessage = null;
         _passwordErrorMessage =
