@@ -37,7 +37,7 @@ class MyAlertDialog extends StatelessWidget {
             onPressed: () {
               showCustomAlertDialog(context);
             },
-            child: const Text('with image'),
+            child: const Text('Custom. with image'),
           ),
         ],
       ),
