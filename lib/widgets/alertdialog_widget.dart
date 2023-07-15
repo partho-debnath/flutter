@@ -5,22 +5,41 @@ class MyAlertDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _buttonWithCustomizeAlertDialog(context);
-  }
-
-  Center _buttonWithDefaultAlertDialog(BuildContext context) {
     return Center(
-      child: ElevatedButton(
-        onPressed: () async {
-          bool? yesOrNo = await _defaultAlertDialog(context);
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          ElevatedButton(
+            onPressed: () async {
+              bool? yesOrNo = await _defaultAlertDialog(context);
 
-          if (yesOrNo == true) {
-            print('Logout');
-          } else if (yesOrNo == false) {
-            print('Not Logout.');
-          }
-        },
-        child: const Text('Click Me'),
+              if (yesOrNo == true) {
+                print('Logout');
+              } else if (yesOrNo == false) {
+                print('Not Logout.');
+              }
+            },
+            child: const Text('Click Me'),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              bool? yesOrNo = await _myCustomizeAlertDialog(context);
+
+              if (yesOrNo == true) {
+                print('Logout');
+              } else if (yesOrNo == false) {
+                print('Not Logout.');
+              }
+            },
+            child: const Text('Click Me'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              showCustomAlertDialog(context);
+            },
+            child: const Text('with image'),
+          ),
+        ],
       ),
     );
   }
@@ -50,23 +69,6 @@ class MyAlertDialog extends StatelessWidget {
           ],
         );
       },
-    );
-  }
-
-  Center _buttonWithCustomizeAlertDialog(BuildContext context) {
-    return Center(
-      child: ElevatedButton(
-        onPressed: () async {
-          bool? yesOrNo = await _myCustomizeAlertDialog(context);
-
-          if (yesOrNo == true) {
-            print('Logout');
-          } else if (yesOrNo == false) {
-            print('Not Logout.');
-          }
-        },
-        child: const Text('Click Me'),
-      ),
     );
   }
 
@@ -110,6 +112,64 @@ class MyAlertDialog extends StatelessWidget {
               child: const Text('Yes'),
             ),
           ],
+        );
+      },
+    );
+  }
+
+  /// with image
+  void showCustomAlertDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (cntxt) {
+        return Dialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.topCenter,
+            children: <Widget>[
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                padding: const EdgeInsets.fromLTRB(10, 40, 10, 10),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Text(
+                      'Flutter',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Filler text is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter.',
+                      textAlign: TextAlign.justify,
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              const Positioned(
+                top: -50,
+                child: CircleAvatar(
+                  backgroundColor: Colors.amber,
+                  radius: 50,
+                  child: FlutterLogo(
+                    size: 70,
+                  ),
+                ),
+              ),
+            ],
+          ),
         );
       },
     );

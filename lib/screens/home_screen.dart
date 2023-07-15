@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/textfield_widget.dart';
+import '../widgets/alertdialog_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TextField() Widget'),
+        title: const Text('Dialog() Widget'),
       ),
-      body: const MytextField(),
+      body: const MyAlertDialog(),
     );
   }
 }
