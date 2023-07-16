@@ -169,7 +169,7 @@
 
 # API Call  (ApiCall Branch)
 
-## 1_task_manager
+## 1_task_manager App
 
     Fetch data from API, with & without FutureBuilder(). 
     Data fetching time show a loading screen as 
@@ -178,6 +178,18 @@
 
 ### Main Widgets
 
+-   FutureBuilder()
+-   CircularProgressIndicator()
+
+
+## 2_crud App
+
+    Fetch data from API, with & without FutureBuilder(). 
+    Add new Product, Update Product and Delete Product
+
+### Main Widgets
+
+-   AlertDialog()
 -   FutureBuilder()
 -   CircularProgressIndicator()
 
