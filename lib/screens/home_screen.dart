@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/alertdialog_widget.dart';
+import '../widgets/mediaquery.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dialog() Widget'),
+        title: const Text('MediaQuery(),  Widget'),
       ),
-      body: const MyAlertDialog(),
+      body: const MyMediaQuery(),
     );
   }
 }

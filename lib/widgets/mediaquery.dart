@@ -5,28 +5,27 @@ class MyMediaQuery extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.sizeOf(context);
+    final Orientation orientation = MediaQuery.orientationOf(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Text(
-            'MediaQuery -> size and orientation.',
-            style: _textStyle(context),
+            'MediaQuery -> Size: ${size.width.toStringAsFixed(0)}, Orientation: ${orientation.name}',
+            style: _textStyle(context, orientation, size),
           ),
           Text(
-            'MediaQuery -> size and orientation.',
-            style: _textStyle(context),
-          )
+            'MediaQuery -> Size: ${size.width.toStringAsFixed(0)}, Orientation: ${orientation.name}',
+            style: _textStyle(context, orientation, size),
+          ),
         ],
       ),
     );
   }
 
-  TextStyle _textStyle(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
-    Orientation orientation = MediaQuery.of(context).orientation;
-
+  TextStyle _textStyle(
+      BuildContext context, Orientation orientation, Size size) {
     if (orientation == Orientation.landscape) {
       return const TextStyle(
         fontWeight: FontWeight.bold,
@@ -37,7 +36,7 @@ class MyMediaQuery extends StatelessWidget {
     } else if (size.width > 600) {
       return const TextStyle(
         fontWeight: FontWeight.bold,
-        color: Colors.black,
+        color: Colors.green,
         fontSize: 40,
       );
     }
