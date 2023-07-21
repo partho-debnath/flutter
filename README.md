@@ -81,7 +81,7 @@ import
 
 
 
-## 5. [carousel_slider: ^4.2.1](https://pub.dev/packages/carousel_slider/install) for Image Sliding
+## 5. [carousel_slider: ^4.2.1](https://pub.dev/packages/carousel_slider/install) for Image Sliding with Indicator
 
 
 installing
