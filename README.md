@@ -76,3 +76,18 @@ installing
 import 
 
     import 'package:flutter_bootstrap/flutter_bootstrap.dart';
+
+
+
+
+
+## 5. [carousel_slider: ^4.2.1](https://pub.dev/packages/carousel_slider/install) for Image Sliding
+
+
+installing
+
+    flutter pub add carousel_slider
+    
+import 
+
+    import 'package:carousel_slider/carousel_slider.dart';

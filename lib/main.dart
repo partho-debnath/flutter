@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './fluttertoast/flutter_toast_app.dart';
+import './image_slider/screens/image_slider_app.dart';
 
 void main() {
-  runApp(const FlutterToastApp());
+  runApp(const ImageSliderApp());
 }
