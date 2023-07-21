@@ -81,7 +81,7 @@ import
 
 
 
-## 5. [carousel_slider: ^4.2.1](https://pub.dev/packages/carousel_slider/install) for Image Sliding with Indicator
+## 5. [carousel_slider: ^4.2.1](https://pub.dev/packages/carousel_slider/install) for Image Sliding with [smooth_page_indicator: ^1.1.0](https://pub.dev/packages/smooth_page_indicator) Indicator
 
 
 installing
