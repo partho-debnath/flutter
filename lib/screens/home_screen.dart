@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/orientation_builder_widget.dart';
+import '../widgets/pageview_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('OrientationBuilder(),  Widget'),
+        title: const Text('PageView(),  Widget'),
       ),
-      body: const MyOrientationBuilder(),
+      body: MyPageView(),
     );
   }
 }
