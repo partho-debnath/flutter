@@ -149,7 +149,7 @@
 -   showMaterialBanner() [MaterialBanner()]
 
 
-## Date Time Picher
+## Date Time Picker
 -   showTimePicker()
 -   showDatePicker()
 -   
