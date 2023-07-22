@@ -2,15 +2,13 @@
 
 ## Version
 
--   Dart version 3.0.3
--   Flutter version 3.10.3
--   DevTools version 2.23.1
+-   Dart 3.0.6
+-   Flutter 3.10.6
+-   DevTools 2.23.1
 
 <br>
 
 # Widgets  (widgets Branch)
-
-## Widgets
 
 
 
@@ -18,8 +16,6 @@
 <br><br><br>
 
 # Navigations  (NamedRoute Branch)
-
-
 
 
 
@@ -53,3 +49,14 @@
 -   FutureBuilder()
 -   CircularProgressIndicator()
 
+
+
+
+
+
+
+
+<br><br><br>
+
+
+#  Third-Party-Packages  (thirdPartyPackages Branch)
