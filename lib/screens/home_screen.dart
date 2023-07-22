@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/futurebuilder_widget.dart';
+import '../widgets/expansiontile_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('FutureBuilder()'),
+        title: const Text('ExpansionTile()'),
       ),
-      body: const FutureBuilderWidget(),
+      body: const MyExpansionTile(),
     );
   }
 }
