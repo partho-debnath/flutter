@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/streambuilder_widget.dart';
+import '../widgets/futurebuilder_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('StreamBuilder()'),
+        title: const Text('FutureBuilder()'),
       ),
-      body: const MyStreamBuilder(),
+      body: const FutureBuilderWidget(),
     );
   }
 }
