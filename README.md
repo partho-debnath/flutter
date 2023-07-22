@@ -69,7 +69,7 @@
 -   OrientationBuilder()
 -   PageView()
 -   Stepper()
--   
+-   showSearch()
 -   
 -   
 -   
