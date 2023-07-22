@@ -98,7 +98,7 @@
 -   ElevatedButton()
 -   ElevatedButton.icon()
 -   TextButton()
--   ElevatedButton.icon()
+-   TextButton.icon()
 -   OutlinedButton()
 -   OutlinedButton.icon()
 -   IconButton()
