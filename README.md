@@ -151,6 +151,6 @@
 
 ## Date Time Picher
 -   showTimePicker()
--   
+-   showDatePicker()
 -   
 -   

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/show_time_picker.dart';
+import '../widgets/show_date_picker.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('showTimePicker()'),
+        title: const Text('showDatePicker()'),
       ),
-      body: const MyShowTimePicker(),
+      body: const MyShowDatePicher(),
     );
   }
 }
