@@ -7,27 +7,16 @@ class MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.blue,
-                Colors.blue.shade200,
-              ],
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-            ),
-          ),
-        ),
+        flexibleSpace: buildFlexibleSpaceWithFlexibleSpaceBar(),
         backgroundColor: Colors.deepPurple,
         shadowColor: Colors.deepPurple,
         elevation: 8,
         forceMaterialTransparency: false,
         foregroundColor: Colors.black,
         leading: const Icon(Icons.app_registration),
-        leadingWidth: 56,
-        primary: false,
-        titleSpacing: 100,
+        // leadingWidth: 56,
+        // primary: false,
+        // titleSpacing: 100,
         toolbarHeight: 90,
         shape: const RoundedRectangleBorder(
           side: BorderSide(
@@ -43,8 +32,8 @@ class MyAppBar extends StatelessWidget {
           color: Colors.green,
           fontSize: 25,
         ),
-        centerTitle: true,
-        title: const Text('Flutter Widgets'),
+        centerTitle: false,
+        // title: const Text('AppBar() Widget'),
         actions: [
           IconButton(
             onPressed: () {},
@@ -52,6 +41,30 @@ class MyAppBar extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  Container buildFlexibleSpaceWithContainer() {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        gradient: LinearGradient(
+          colors: [
+            Colors.blue,
+            Colors.blue.shade200,
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+      ),
+    );
+  }
+
+  FlexibleSpaceBar buildFlexibleSpaceWithFlexibleSpaceBar() {
+    return FlexibleSpaceBar(
+      title: const Text('FlexibleSpaceBar()'),
+      centerTitle: true,
+      background: buildFlexibleSpaceWithContainer(),
     );
   }
 }
