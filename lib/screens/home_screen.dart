@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/show_date_picker.dart';
+import '../widgets/rangeslider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('showDatePicker()'),
+        title: const Text('RangeSlider()'),
       ),
-      body: const MyShowDatePicher(),
+      body: const MyRangeSlider(),
     );
   }
 }
