@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/willpopscope_widget.dart';
+import '../widgets/interactiveviewer_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WillPopScope() Widget'),
+        title: const Text('InteractiveViewer() Widget'),
       ),
-      body: const MyWillPopScope(),
+      body: const MyInteractiveViewer(),
     );
   }
 }
