@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/interactiveviewer_widget.dart';
+import '../widgets/checkbox_list_tile_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('InteractiveViewer() Widget'),
+        title: const Text('CheckboxListTile() Widget'),
       ),
-      body: const MyInteractiveViewer(),
+      body: const MyCheckboxListTile(),
     );
   }
 }

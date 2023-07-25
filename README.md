@@ -62,6 +62,7 @@
 -   Slider()
 -   SwitchListTile()
 -   AboutListTile()
+-   CheckboxListTile()
 -   Banner()
 -   ChoiceChip()
 -   DecoratedBox()
