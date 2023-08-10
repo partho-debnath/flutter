@@ -20,8 +20,10 @@ class _CrudHomeScreenState extends State<CrudHomeScreen> {
 
   @override
   void initState() {
-    getProducts();
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      getProducts();
+    });
   }
 
   @override
