@@ -91,3 +91,58 @@ installing
 import 
 
     import 'package:carousel_slider/carousel_slider.dart';
+
+
+
+
+## 6. [image_picker: ^1.0.2](https://pub.dev/packages/image_picker)
+
+
+installing
+
+    flutter pub add image_picker
+    
+import 
+
+    import 'package:image_picker/image_picker.dart';
+
+
+
+
+## 8. [shared_preferences: ^2.2.0](https://pub.dev/packages/shared_preferences)
+
+
+installing
+
+    flutter pub add shared_preferences
+    
+import 
+
+    import 'package:shared_preferences/shared_preferences.dart';
+
+
+
+## 9. [pin_code_fields: ^8.0.1](https://pub.dev/packages/pin_code_fields)
+
+
+installing
+
+    flutter pub add pin_code_fields
+    
+import 
+
+    import 'package:pin_code_fields/pin_code_fields.dart';
+
+
+
+## 10. [cached_network_image: ^3.2.3](https://pub.dev/packages/cached_network_image)
+
+
+installing
+
+    flutter pub add cached_network_image
+    
+import 
+
+    import 'package:cached_network_image/cached_network_image.dart';
+
