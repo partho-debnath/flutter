@@ -146,3 +146,71 @@ import
 
     import 'package:cached_network_image/cached_network_image.dart';
 
+
+
+
+## 11. [alphabet_scroll_view: ^0.3.2](https://pub.dev/packages/alphabet_scroll_view)
+
+
+installing
+
+    flutter pub add alphabet_scroll_view
+    
+import 
+
+    import 'package:alphabet_scroll_view/alphabet_scroll_view.dart';
+
+
+
+
+## 12. [slideable: ^0.0.2](https://pub.dev/packages/slideable)
+
+
+installing
+
+    flutter pub add slideable
+    
+import 
+
+    import 'package:slideable/slideable.dart';
+
+
+
+## 13. [alphabet_scroll_view: ^0.3.2](https://pub.dev/packages/alphabet_scroll_view)
+
+
+installing
+
+    flutter pub add alphabet_scroll_view
+    
+import 
+
+    import 'package:alphabet_scroll_view/alphabet_scroll_view.dart';
+
+
+
+## 14. [flutter_slidable: ^3.0.0](https://pub.dev/packages/flutter_slidable)
+
+
+installing
+
+    flutter pub add flutter_slidable
+    
+import 
+
+    import 'package:flutter_slidable/flutter_slidable.dart';
+
+
+
+
+## 15. [rive: ^0.11.17](https://pub.dev/packages/rive#rive-overview)
+
+
+installing
+
+    flutter pub add rive
+    
+import 
+
+    import 'package:rive/rive.dart';
+
