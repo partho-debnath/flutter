@@ -214,3 +214,15 @@ import
 
     import 'package:rive/rive.dart';
 
+
+## 16. [flutter_staggered_grid_view: ^0.7.0](https://pub.dev/packages/flutter_staggered_grid_view)
+
+
+installing
+
+    flutter pub add flutter_staggered_grid_view
+    
+import 
+
+    import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
