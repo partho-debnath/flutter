@@ -226,3 +226,15 @@ import
 
     import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
+
+## 17. [flutter_native_splash: ^2.3.5](https://pub.dev/packages/flutter_native_splash)
+
+
+installing
+
+    flutter pub add flutter_native_splash
+    
+import 
+
+    import 'package:flutter_native_splash/flutter_native_splash.dart';
+
